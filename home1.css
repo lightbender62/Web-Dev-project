@@ -1,0 +1,31 @@
+*{
+    margin:0;
+    padding:0;
+}
+nav{
+    background-color: #7091E6;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 8vh;
+}
+.list{
+    display: flex;
+    text-decoration: none;
+    gap: 6vw;
+    list-style: none;
+    font-size: 25px;
+    color: #111936;
+}
+.left{
+    padding-left: 8px;
+}
+.right{
+    padding-right: 30px;
+}
+main{
+    height: 100vh;
+    background-color: #EDE8F5;
+}
