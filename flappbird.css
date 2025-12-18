@@ -46,5 +46,66 @@ li:hover {
 main {
   height: 100vh;
   background-color: #ede8f5;
+  display: flex;
+  justify-content: center;
 }
 
+#game {
+  background-image: url("assests/fb-game-background.png");
+  height: 570px;
+  width: 1000px;
+  border: 3px solid black;
+  margin-top: 2%;
+  overflow: hidden;
+  position: relative;
+}
+
+#pipe1 {
+  position: absolute;
+  width: 50px;
+  height: 50%;
+  background-image: url("assests/flappybird-pipe.png");
+  transform: rotate(180deg);
+}
+#pipe2 {
+  position: absolute;
+  width: 50px;
+  height: 30%;
+  top: 80%;
+
+  background-image: url("assests/flappybird-pipe.png");
+}
+
+.obs {
+  left: 95%;
+  animation: move 4s ease-in-out infinite;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@keyframes move {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: -6%;
+  }
+}
+
+#bird {
+  position: absolute;
+  top: 200px;
+  left: 90px;
+}
+#bird img {
+  height: 60px;
+  width: 80px;
+}
+
+#score {
+  color: whitesmoke;
+  font-size: x-large;
+  font-family: sans-serif;
+  font-weight: bold;
+  margin-left: 2%;
+}
