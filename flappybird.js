@@ -66,6 +66,8 @@ function endgame(){
   if(gameOver) return;
   gameOver = true;
 
+  document.getElementById("pipe1").style.animationPlayState = "paused";
+  document.getElementById("pipe2").style.animationPlayState = "paused";
   const overlay = document.createElement("div");
   overlay.style.position = "absolute";
   overlay.style.top = "0";
@@ -79,7 +81,7 @@ function endgame(){
   overlay.style.justifyContent = "center";
   overlay.style.color = "#fff";
   overlay.style.fontSize = "24px";
-  overlay.style.zIndex = "999";
+  overlay.style.zIndex = "79";
   overlay.style.gap = "9px";
 
   overlay.innerHTML = `
