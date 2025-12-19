@@ -10,6 +10,7 @@ nav {
   align-items: center;
   width: 100vw;
   height: 8vh;
+  z-index: 15;
 }
 .list {
   display: flex;
@@ -44,7 +45,7 @@ li:hover {
   padding-right: 30px;
 }
 main {
-  height: 100vh;
+  height: 92vh;
   background-color: #ede8f5;
   display: flex;
   justify-content: center;
@@ -62,14 +63,14 @@ main {
 
 #pipe1 {
   position: absolute;
-  width: 50px;
+  width: 80px;
   height: 50%;
   background-image: url("assests/flappybird-pipe.png");
   transform: rotate(180deg);
 }
 #pipe2 {
   position: absolute;
-  width: 50px;
+  width: 80px;
   height: 30%;
   top: 80%;
 
@@ -78,7 +79,7 @@ main {
 
 .obs {
   left: 95%;
-  animation: move 4s ease-in-out infinite;
+  animation: move 2.5s linear infinite;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -98,8 +99,16 @@ main {
   left: 90px;
 }
 #bird img {
-  height: 60px;
-  width: 80px;
+  height: 40px;
+  width: 55px;
+}
+
+#birdHitbox {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  width: 40px;
+  height: 28px;
 }
 
 #score {
@@ -108,4 +117,37 @@ main {
   font-family: sans-serif;
   font-weight: bold;
   margin-left: 2%;
+}
+
+footer {
+    background-color: #3D52A0;
+    height: 150px;
+    padding-top: 10px;
+
+}
+.credits{
+    color: whitesmoke;
+    font-size: 19px;
+}
+
+.credits:hover{
+    background-color: #164edb;
+    padding : 5px;
+    border-radius: 3px;
+
+}
+.container2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:7px;
+    padding-top: 20px;
+}
+
+#restartBtn{
+  padding: 5px;
+  font-size: 19px;
+  border-radius: 2px;
+  color: #3D52A0;
 }
