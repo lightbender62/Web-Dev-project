@@ -10,6 +10,7 @@ nav {
   align-items: center;
   width: 100vw;
   height: 8vh;
+  z-index: 15;
 }
 .list {
   display: flex;
@@ -49,6 +50,7 @@ main {
 }
 footer {
   background-color: #3d52a0;
+  padding-bottom: 20px;
 }
 .credits {
   color: whitesmoke;
@@ -71,13 +73,16 @@ footer {
 }
 
 .grid-container {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: 32%;
-  margin-right: 27%;
+  padding-top: 30px ;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 100px;
+  margin:auto;
+  width: 60vw;
+  grid-template-rows: 180px;
   font-size: 40px;
   font-family: sans-serif;
-  gap: 25px;
+  place-items: center;
 }
 
 .box {
@@ -122,19 +127,30 @@ footer {
   background-color: lightblue;
   border: 4px solid blue;
   color:#3d52a0;
+  box-shadow: 4px 4px 4px lightblue;
+}
+#box1 :nth-child(1){
+  text-decoration: none;
+  color:#3d52a0;
 }
 #box2{
   background-color: lightgreen;
   border: 4px solid teal;
   color:#3d52a0;
+  box-shadow: 4px 4px 4px lightgreen;
 }
 #box3{
   background-color: #FFBF00;
   border: 4px solid red;
   color:#3d52a0;
+  box-shadow: 4px 4px 4px #FFBF00;
 }
 #box4{
+  box-shadow: 4px 4px 4px pink;
   background-color: pink;
   border: 4px solid maroon;
   color:#3d52a0;
+}
+#v1{
+  object-position: 86% 30%;
 }
