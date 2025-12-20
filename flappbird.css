@@ -128,13 +128,13 @@ footer {
 .credits{
     color: whitesmoke;
     font-size: 19px;
+    text-align: center;
 }
 
 .credits:hover{
     background-color: #164edb;
     padding : 5px;
     border-radius: 3px;
-
 }
 .container2{
     display: flex;
@@ -150,4 +150,38 @@ footer {
   font-size: 19px;
   border-radius: 2px;
   color: #3D52A0;
+}
+
+@media screen and (max-width:987px){
+  nav {
+  background-color: #7091e6;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;   
+  height: 8vh;
+  z-index: 80;
+}
+ .right{
+  display: none;
+ }
+ .left{
+  margin: auto;
+  transform: translateY(-5px);
+ }
+main {
+  height: 90vh;
+  background-color: #ede8f5;
+  display: flex;
+  justify-content: center;
+}
+
+footer {
+    background-color: #3D52A0;
+    height: 200px;
+    padding-top: 10px;
+
+}
+
 }
