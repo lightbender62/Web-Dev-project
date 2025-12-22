@@ -184,3 +184,66 @@ footer {
   gap: 7px;
   padding-top: 20px;
 }
+
+@media screen and (max-width:987px){
+  nav {
+  background-color: #7091e6;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;   
+  height: 8vh;
+  z-index: 80;
+}
+ .right{
+  display: none;
+ }
+ .left{
+  margin: auto;
+  transform: translateY(-3px);
+ }
+main {
+  height: 90vh;
+  background-color: #ede8f5;
+  display: flex;
+  justify-content: center;
+}
+
+footer {
+    background-color: #3D52A0;
+    height: 200px;
+    padding-top: 10px;
+
+}
+.logo1{
+  transform: scale(2);
+}
+
+#banner{
+  font-size: 28px;
+}
+.timer{
+  font-size: 50px;
+}
+.time{
+  font-size: 50px;
+}
+.para{
+  font-size: 35px;
+}
+#input{
+  width: 70vw;
+  height: 28vh;
+  font-size: 35px;
+}
+.start{
+  padding-top: 26px;
+}
+#start_btn {
+  width: 20vw;
+  height: 6vh;
+  
+}
+
+}
