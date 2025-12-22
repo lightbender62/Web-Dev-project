@@ -1,3 +1,7 @@
+*{
+  padding: 0;
+  margin :0;
+}
 nav {
   background-color: #7091e6;
   position: fixed;
@@ -63,14 +67,11 @@ body{
     background-color: #3d52a0;
     font-size: 3vh;
     height: 8vh;
-    color:#EDE8F5;
     border-color:white;
     border-radius: 2vh;
-    padding-left: 4vh;
-    padding-right: 4vh;
-    display:flex;
-    flex-direction: row;
-    align-items: center;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    margin:auto;
     border:1vh ridge #adbbda;    
  }
 
@@ -117,8 +118,8 @@ body{
     height: 7vh;
     color:#EDE8F5;
     border-radius: 2vh;
-    padding-left: 2vh;
-    padding-right: 2vh;
+    padding-left: 1vw;
+    padding-right: 1vw;
     display:flex;
     flex-direction: row;
     align-items: center;
