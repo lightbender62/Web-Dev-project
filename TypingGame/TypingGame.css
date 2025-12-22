@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: sans-serif;
 }
 nav {
   background-color: #7091e6;
@@ -46,19 +47,21 @@ li:hover {
 }
 
 .analysis {
-  height: 270px;
-  width: 500px;
-  margin-left: 490px;
+  height: 35vh;
+  width: 40vw;
+  margin : auto;
   display: flex;
-  justify-content: space-around;
+  gap: 5vh;
   flex-direction: column;
+  padding-top: 3vh;
 }
 .ana {
   display: flex;
+  justify-content: space-between;
   font-weight: bold;
   font-size: 26px;
-  color: teal;
-  border: 2px solid rgb(255, 0, 166);
+  color: #3d52a0;
+  border: 2px solid #7091e6;
   padding: 9px;
 }
 .btn {
@@ -77,13 +80,19 @@ li:hover {
 #banner {
   text-align: center;
   font-size: 22px;
-  text-decoration: underline;
+  padding-top: 10vh;
+  color: #2b3c7a;
 }
 .para {
+  text-align: center;
   font-size: 17px;
   font-weight: bold;
-  color: rgb(59, 58, 58);
-  margin: 0 100px 0 100px;
+  color: #2b3c7a;
+  margin: auto;
+  width: 70vw;
+  padding: 3vh;
+  border : 3px solid #2b3c7a;
+  border-radius: 5px;
 }
 .char.success {
   color: greenyellow;
@@ -100,8 +109,12 @@ li:hover {
   justify-content: center;
 }
 #input {
-  height: 70px;
-  border: 3px solid black;
+  height: 13vh;
+  width: 60vw;
+  border: 3px solid #3d52a0;
+  padding: 4px;
+  color:#2b3c7a;
+  font-size: 16px;
 }
 .para {
   font-size: 20px;
@@ -110,16 +123,17 @@ li:hover {
   display: flex;
   gap: 10px;
   justify-content: center;
+  padding-top: 10px;
 }
 .timer {
   font-size: 30px;
   font-weight: bold;
-  color: red;
+  color: #738ed5;
 }
 .time {
   font-size: 30px;
   font-weight: bold;
-  color: red;
+  color:#738ed5;
 }
 .start {
   display: flex;
@@ -127,17 +141,17 @@ li:hover {
 }
 #start_btn {
   color: white;
-  background-color: black;
+  background-color: #2b3c7a;
   border-radius: 8px;
-  width: 100px;
-  height: 80px;
+  width: 10vw;
+  height: 10vh;
   font-family: sans-serif;
   font-weight: bold;
   font-size: 23px;
   padding: 8px;
 }
 #start_btn:hover {
-  color: rgb(139, 147, 155);
+  color: rgb(102, 107, 112);
   cursor: pointer;
 }
 
