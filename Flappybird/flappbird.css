@@ -52,7 +52,7 @@ main {
 }
 
 #game {
-  background-image: url("assests/fb-game-background.png");
+  background-image: url("../assests/fb-game-background.png");
   height: 570px;
   width: 1000px;
   border: 3px solid black;
@@ -65,7 +65,7 @@ main {
   position: absolute;
   width: 80px;
   height: 50%;
-  background-image: url("assests/flappybird-pipe.png");
+  background-image: url("../assests/flappybird-pipe.png");
   transform: rotate(180deg);
 }
 #pipe2 {
@@ -74,7 +74,7 @@ main {
   height: 30%;
   top: 80%;
 
-  background-image: url("assests/flappybird-pipe.png");
+  background-image: url("../assests/flappybird-pipe.png");
 }
 
 .obs {

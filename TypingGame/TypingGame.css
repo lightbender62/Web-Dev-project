@@ -64,18 +64,24 @@ li:hover {
   border: 2px solid #7091e6;
   padding: 9px;
 }
+.restart{
+  width: 85vw;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .btn {
   font-size: 30px;
-  color: darkgreen;
-  width: 220px;
-  background-color: greenyellow;
+  color: white;
+  width: 12vw;
+  background-color:#2b3c7a;
   border-radius: 6px;
-  margin-left: 640px;
-  height: 40px;
+  height: 9vh;
 }
 .btn:hover {
+  color: rgb(102, 107, 112);
   cursor: pointer;
-  background-color: green;
 }
 #banner {
   text-align: center;
@@ -101,7 +107,7 @@ li:hover {
   color: red;
 }
 .btn:hover {
-  background-color: rgb(4, 199, 4);
+  cursor: pointer;  
   transition-duration: 0.2s;
 }
 .content {
