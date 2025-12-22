@@ -1,0 +1,81 @@
+<html>
+  <head>
+    <title>Typing Game</title>
+    <link rel="stylesheet" href="TypingGame.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="left">
+        <a href="../home.html">
+          <img src="../assests/nav.png" height="70px" />
+        </a>
+      </div>
+      <div class="right">
+        <ul class="list">
+          <li><a href="../FlappyBird/FlappBird.html"> Flappy Bird </a></li>
+          <li><a href="../Tic-Tac-Toe/tictactoe.html"> Tic-Tac Toe </a></li>
+          <li><a href="../Wordle/wordle.html"> Wordle </a></li>
+          <li><a href="TypingGame.html"> Typing Game </a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <br /><br /><br /><br />
+    <div class="Banner">
+      <div id="banner">
+        <h1>Click the Start-Test button to Start</h1>
+      </div>
+      <div class="disptimer">
+        <div class="timer">Time Remaining:</div>
+        <span class="time">0</span>
+      </div>
+      <br />
+      <div class="para">
+        <p id="sentence"></p>
+      </div>
+      <br />
+      <div class="content">
+        <textarea
+          id="input"
+          name="message"
+          rows="2"
+          cols="70"
+          placeholder="Type Here when the test Starts"
+        ></textarea>
+      </div>
+      <br />
+      <div class="start">
+        <button id="start_btn" onclick="startTest()">Start Test</button>
+      </div>
+      <div class="analysis">
+        <div class="ana">
+          <div class="wpm">WPM(Words per minute) :</div>
+          <div class="awpm">0</div>
+        </div>
+        <div class="ana">
+          <div class="acc">Accuray(%) :</div>
+          <div class="aacc">0</div>
+        </div>
+        <div class="ana">
+          <div class="mist">No. of Mistakes :</div>
+          <span class="amist"> 0</span>
+        </div>
+      </div>
+      <div class="restart">
+        <button class="btn" onclick="startTest()">Try Again!</button>
+      </div>
+    </div>
+    <br /><br /><br />
+    <footer>
+      <div class="container2">
+        <div class="credits">Thank you for looking at the project!</div>
+        <div class="credits">The project was made by :</div>
+        <div class="credits">Eklavya</div>
+        <div class="credits">Darshik</div>
+        <div class="credits">Vanshika</div>
+        <div class="credits">Vishruthi</div>
+      </div>
+    </footer>
+    <script src="TypingGame.js"></script>
+  </body>
+</html>
