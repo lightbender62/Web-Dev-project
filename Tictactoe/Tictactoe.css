@@ -1,7 +1,8 @@
-*{
+* {
   padding: 0;
-  margin :0;
+  margin: 0;
 }
+
 nav {
   background-color: #7091e6;
   position: fixed;
@@ -12,6 +13,7 @@ nav {
   height: 8vh;
   z-index: 15;
 }
+
 .list {
   display: flex;
   gap: 6vw;
@@ -21,111 +23,131 @@ nav {
 
   font-family: sans-serif;
 }
+
 li {
   padding: 5px;
   border-radius: 4px;
 }
+
 .list a {
   text-decoration: none;
   color: whitesmoke;
 }
+
 a {
   text-decoration: none;
   color: #3d52a0;
 }
+
 li:hover {
   background-color: #164edb;
 
   cursor: pointer;
   transition-duration: 0.02s;
 }
+
 .list a:hover {
   text-decoration: none;
 }
+
 .left {
   padding-left: 8px;
 }
+
 .right {
   padding-right: 30px;
 }
+
 main {
   height: 100vh;
   background-color: #ede8f5;
 }
-body{
-    background-image: url("../assests/background_tictactoe.png");
-    background-size:cover; 
-    background-position: center; 
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    justify-items: center;
-    
+
+body {
+  background-image: url("../assests/background_tictactoe.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  justify-items: center;
+
 }
- .gameName{
-    color: #EDE8F5;
-    text-align: center;
-    background-color: #3d52a0;
-    font-size: 3vh;
-    height: 8vh;
-    border-color:white;
-    border-radius: 2vh;
-    padding-left: 2vw;
-    padding-right: 2vw;
-    margin:auto;
-    border:1vh ridge #adbbda;    
- }
 
- .outerContainer{
-    background-color: #adbbda;
-    height: 70vh;
-    width: 70vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 0%;
-    border: 1vh ridge #3d52a0;
-    border-radius: 2vh;
-    max-width: 100vw;
-    max-height: 100vw;
+.gameName {
+  color: #EDE8F5;
+  text-align: center;
+  background-color: #3d52a0;
+  font-size: 3vh;
+  height: 8vh;
+  border-color: white;
+  border-radius: 2vh;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  margin: auto;
+  border: 1vh ridge #adbbda;
+}
 
- }
+.outerContainer {
+  background-color: #adbbda;
+  height: 70vh;
+  width: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0%;
+  border: 1vh ridge #3d52a0;
+  border-radius: 2vh;
+  max-width: 100vw;
+  max-height: 100vw;
 
- .buttons{
-    background-color: #3d52a0;
-    height: 18vh;
-    width: 18vh;
-    max-height: 22vw;
-    max-width: 22vw;
-    margin-left: 2.5vh;
-    margin-right: 2.5vh;
-    border:1vh ridge #3d52a0;
-    border-radius: 2vh ;
-    font-size: 12vh;
-    text-shadow:
-        1px 15px 6px rgba(16,16,16,0.4),
-        1px 20px 10px rgba(16,16,16,0.2),
-        1px 25px 35px rgba(16,16,16,0.2),
-        1px 35px 60px rgba(16,16,16,0.4);
-    font-weight: 600;
-    color: aliceblue;
- }
- .NEW_GAME{
-    color: #EDE8F5;
-    text-align: center;
-    background-color: #3d52a0;
-    font-size: 2vh;
-    height: 7vh;
-    color:#EDE8F5;
-    border-radius: 2vh;
-    padding-left: 1vw;
-    padding-right: 1vw;
-    display:flex;
-    flex-direction: row;
-    align-items: center;
-    border:1vh ridge #3d52a0; 
-    
-}footer {
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttons {
+  background-color: #3d52a0;
+  height: 18vh;
+  width: 18vh;
+  max-height: 22vw;
+  max-width: 22vw;
+  margin-left: 2.5vh;
+  margin-right: 2.5vh;
+  border: 1vh ridge #3d52a0;
+  border-radius: 2vh;
+  font-size: 12vh;
+  text-shadow:
+    1px 15px 6px rgba(16, 16, 16, 0.4),
+    1px 20px 10px rgba(16, 16, 16, 0.2),
+    1px 25px 35px rgba(16, 16, 16, 0.2),
+    1px 35px 60px rgba(16, 16, 16, 0.4);
+  font-weight: 600;
+  color: aliceblue;
+}
+
+.NEW_GAME {
+  color: #EDE8F5;
+  text-align: center;
+  background-color: #3d52a0;
+  font-size: 2vh;
+  height: 7vh;
+  color: #EDE8F5;
+  border-radius: 2vh;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 1vh ridge #3d52a0;
+
+}
+
+footer {
   background-color: #3d52a0;
   padding-bottom: 20px;
   width: 100vw;
@@ -145,6 +167,7 @@ body{
   border-radius: 3px;
   font-size: 2vw;
 }
+
 .container2 {
   display: flex;
   flex-direction: column;
@@ -157,60 +180,61 @@ body{
 }
 
 
-.NEW_GAME:hover{
-    background-color: #202e62;
+.NEW_GAME:hover {
+  background-color: #202e62;
 }
 
-.buttons:hover{
-    background-color: #202e62;
+.buttons:hover {
+  background-color: #202e62;
 }
 
- @media (max-width:680px)
-{
-    .buttons{
-        font-size: 12vw;
-        margin-left: 2.5vw;
-        margin-right: 2.5vw;
-    }
-    
-    .gameName{
-        font-size: 3vw;
-    }
+@media (max-width:680px) {
+  .buttons {
+    font-size: 12vw;
+    margin-left: 2.5vw;
+    margin-right: 2.5vw;
+  }
 
-    .NEW_GAME{
-        font-size: 2vw;
-    }
-    .credits{
-      font-size: 3vw;
-    }
+  .gameName {
+    font-size: 3vw;
+  }
+
+  .NEW_GAME {
+    font-size: 2vw;
+  }
+
+  .credits {
+    font-size: 3vw;
+  }
 }
 
-@media screen and (max-width:987px){
+@media screen and (max-width:987px) {
   nav {
-  background-color: #7091e6;
-  position: fixed;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100vw;   
-  height: 8vh;
-  z-index: 80;
-}
- .right{
-  display: none;
- }
- .left{
-  margin: auto;
-  transform: translateY(-3px);
- }
+    background-color: #7091e6;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 8vh;
+    z-index: 80;
+  }
 
-footer {
+  .right {
+    display: none;
+  }
+
+  .left {
+    margin: auto;
+    transform: translateY(-3px);
+  }
+
+  footer {
     background-color: #3D52A0;
     height: 200px;
     padding-top: 10px;
     width: 100vw;
 
-}
+  }
 
 }
-
