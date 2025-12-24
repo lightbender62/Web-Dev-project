@@ -241,9 +241,43 @@ footer {
   padding-top: 26px;
 }
 #start_btn {
-  width: 20vw;
+  width: 25vw;
   height: 6vh;
-  
+  font-size: 35px;
+  border-radius: 10px;
+}
+.analysis{
+  width: 70vw;
+  margin:auto;
+  height: 30vh;
+}
+.ana{
+  align-items: center;
+  height: 8vh;
+  font-size: 40px;
+  padding: 20px;
+}
+.restart{
+  padding: 80px;
+  width: 30vw;
+}
+.restart :nth-child(1){
+  height: 5vh;
+  width:27vw;
+  font-weight: 600;
+  font-size: 40px;
+  border-radius: 10px;
+}
+
+footer{
+  height: 20vh;
+}
+.credits{
+  font-size: 33px;
+  font-weight: 500;
+}
+.container2{
+  height: 15vh;
 }
 
 }
