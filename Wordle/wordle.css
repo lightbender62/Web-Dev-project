@@ -74,10 +74,8 @@ h2 {
 }
 
 .main {
-
-
-    width: 90%;
-    max-width: 600px;
+    width: 60vw;
+    height:70vw;
     padding: 40px 20px;
     display: flex;
     align-items: center;
