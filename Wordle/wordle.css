@@ -1,9 +1,7 @@
 * {
-
     padding: 0;
     margin: 0;
 }
-
 nav {
     background-color: #7091e6;
     position: fixed;
@@ -21,7 +19,6 @@ nav {
     list-style: none;
     font-size: 25px;
     color: whitesmoke;
-
     font-family: sans-serif;
 }
 
@@ -37,7 +34,6 @@ li {
 
 li:hover {
     background-color: #164edb;
-
     cursor: pointer;
     transition-duration: 0.02s;
 }
@@ -56,33 +52,32 @@ li:hover {
 
 body {
     background-image: url("../assests/wordlebackground.png");
+    text-align: center;
 }
 
 h2 {
     background-color: #7091e6;
-    ;
-
     font-family: "Sixtyfour", sans-serif;
-    height: 8vh;
-    font-size: 38px;
-    padding-top: 30px;
-    padding-bottom: 10px;
-    ;
+    height: 8vw;
+    font-size: 4vw;
+    padding-top: 7vh;
+    padding-bottom: 0px;
     color: white;
     text-align: center;
-
+    width: 100vw;
 }
 
 .main {
     width: 60vw;
-    height:70vw;
-    padding: 40px 20px;
+    height:35vw;
+    min-height:400px;
+    min-width: 400px;
+    padding: 40px 0px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0 auto;
     background-color: #7091e6;
-    ;
     flex-direction: column;
 }
 
@@ -96,13 +91,40 @@ h2 {
     background-color: yellow;
 }
 
-button {
+.gamearea {
     width: 5vw;
     height: 5vw;
+    min-height: 60px;
+    min-width: 60px;
+    
+    color: #3D52A0;
+    
+    font-size: 3vw;
 }
+.key{
+    width: 6vw;
+    height: 6vw;
+    min-width: 30px;
+    min-height: 30px;
+}
+.big{
+    width:12vw;
+    min-width: 30px;
+}
+.firstrow{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 10px;
 
-
-.row {
+}
+.secondrow{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+.thirdrow{
     display: flex;
     justify-content: center;
     gap: 5px;
@@ -114,18 +136,95 @@ button {
     grid-template-columns: repeat(5, 1fr) ;
     grid-template-rows: repeat(6, 1fr);
     row-gap: 1vw;
-    column-gap: 1vh;
+    column-gap: 1vw;
+    height: 100%;
 }
+
 .winner{
     background-color: #7091e6;
-    ;
-
     font-family: "Sixtyfour", sans-serif;
-    height: 8vh;
-    font-size: 38px;
-    padding-top: 30px;
-    padding-bottom: 10px;
-    ;
+    height: 4vw;
+    padding-top: 2vh;
+    padding-bottom: 1vh;
     color: white;
     text-align: center;
+    width:100vw;
+    font-size: 3vw;
+}
+
+.newGame{
+    height: 4vw;
+    width: 15vw;
+    background-color: #3D52A0;
+    border: 5px ridge whitesmoke;
+    color:aliceblue;
+    font-size:1.5vw ;
+    font-family: "Sixtyfour", sans-serif;
+    border-radius: 1vw;
+}
+footer {
+    background-color: #3D52A0;
+    height: 150px;
+    padding-top: 10px;
+
+}
+.credits{
+    color: whitesmoke;
+    font-size: 19px;
+    text-align: center;
+}
+
+.credits:hover{
+    background-color: #164edb;
+    padding : 5px;
+    border-radius: 3px;
+}
+.container2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:7px;
+    padding-top: 20px;
+}
+@media screen and (max-width:987px) {
+  nav {
+    background-color: #7091e6;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 8vh;
+    z-index: 80;
+  }
+  .right {
+    display: none;
+  }
+  .left {
+    margin: auto;
+    transform: translateY(-3px);
+  }
+  .newGame{
+    height: 5vh;
+    width: 15vh;
+    font-size: 1.5vh;
+  }
+  footer {
+    background-color: #3D52A0;
+    height: 200px;
+    padding-top: 10px;
+
+}
+.gamearea{
+        font-size: 2vh;
+        font-weight: bold;
+    }
+}
+@media(max-width:450px){
+    .keyboard{
+        width:100%;
+    }
+    
+    
 }

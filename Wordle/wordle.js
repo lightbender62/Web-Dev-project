@@ -1,5 +1,17 @@
+let tiles=document.querySelectorAll(".gamearea");
+let keyBoard=document.querySelectorAll(".key");
+let main=document.getElementById('playArea');
+let newGame=document.getElementsByClassName('newGame');
+
+function resetGame(){
+    location.reload();
+}
+newGame[0].addEventListener('click', () => {
+resetGame();
+});
+
 let word;
-// let value = prompt("Enter the number between 1 and 100 to set difficulty");
+let value = prompt("Enter the number between 1 and 100 to set difficulty");
 switch(value){
     case "1": word="APPLE"; break;
     case "2": word="HOUSE"; break;
@@ -103,9 +115,6 @@ switch(value){
     case "100": word="GNASH"; break; 
     default: word="MAGIC";
 }
-let tiles=document.querySelectorAll(".gamearea");
-let keyBoard=document.querySelectorAll(".key");
-let main=document.getElementById('playArea');
 
 const newDiv = document.createElement('div');
 newDiv.className = "winner";
