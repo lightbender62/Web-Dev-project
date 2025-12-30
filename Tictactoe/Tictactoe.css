@@ -3,6 +3,11 @@
   margin: 0;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 nav {
   background-color: #7091e6;
   position: sticky;
