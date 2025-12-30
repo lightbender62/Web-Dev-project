@@ -85,7 +85,7 @@ body {
   padding-left: 2vw;
   padding-right: 2vw;
   margin: auto;
-  border: 1vh ridge #adbbda;
+  border: 1vh ridge;
 }
 
 .outerContainer {
@@ -183,6 +183,13 @@ footer {
 .NEW_GAME:hover {
   background-color: #202e62;
 }
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 
 .buttons:hover {
   background-color: #202e62;

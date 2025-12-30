@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
 }
+
 nav {
     background-color: #7091e6;
     position: fixed;
@@ -69,8 +70,8 @@ h2 {
 
 .main {
     width: 60vw;
-    height:35vw;
-    min-height:400px;
+    height: 35vw;
+    min-height: 400px;
     min-width: 400px;
     padding: 40px 0px;
     display: flex;
@@ -81,13 +82,15 @@ h2 {
     flex-direction: column;
 }
 
-.correct{
+.correct {
     background-color: green;
 }
-.incorrect{
+
+.incorrect {
     background-color: red;
 }
-.partial{
+
+.partial {
     background-color: yellow;
 }
 
@@ -96,51 +99,84 @@ h2 {
     height: 5vw;
     min-height: 60px;
     min-width: 60px;
-    
+
     color: #3D52A0;
-    
+
     font-size: 3vw;
 }
-.key{
+
+.key {
     width: 6vw;
     height: 6vw;
     min-width: 30px;
     min-height: 30px;
+
+    background-color: #7091e6;
+    border: 3px ridge whitesmoke;
+    border-radius: 5px;
+
+    color: white;
+    font-size: 1.5vw;
+    font-weight: bold;
+    text-align: center;
+    line-height: 6vw;
+
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    outline: none;
+
+    cursor: pointer;
 }
-.big{
-    width:12vw;
+
+.key:hover {
+    background-color: #5870c5;
+}
+
+.key:focus {
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.5);
+}
+
+
+
+
+.big {
+    width: 12vw;
     min-width: 30px;
 }
-.firstrow{
+
+.firstrow {
     display: flex;
     justify-content: center;
     gap: 5px;
     margin-bottom: 10px;
 
 }
-.secondrow{
-    display: flex;
-    justify-content: center;
-    gap: 5px;
-    margin-bottom: 10px;
-}
-.thirdrow{
+
+.secondrow {
     display: flex;
     justify-content: center;
     gap: 5px;
     margin-bottom: 10px;
 }
 
-.wordletiles{
+.thirdrow {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.wordletiles {
     display: grid;
-    grid-template-columns: repeat(5, 1fr) ;
+    grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(6, 1fr);
     row-gap: 1vw;
     column-gap: 1vw;
     height: 100%;
 }
 
-.winner{
+.winner {
     background-color: #7091e6;
     font-family: "Sixtyfour", sans-serif;
     height: 4vw;
@@ -148,83 +184,95 @@ h2 {
     padding-bottom: 1vh;
     color: white;
     text-align: center;
-    width:100vw;
+    width: 100vw;
     font-size: 3vw;
 }
 
-.newGame{
+.newGame {
     height: 4vw;
     width: 15vw;
     background-color: #3D52A0;
     border: 5px ridge whitesmoke;
-    color:aliceblue;
-    font-size:1.5vw ;
+    color: aliceblue;
+    font-size: 1.5vw;
     font-family: "Sixtyfour", sans-serif;
     border-radius: 1vw;
 }
+
 footer {
     background-color: #3D52A0;
     height: 150px;
     padding-top: 10px;
 
 }
-.credits{
+
+.credits {
     color: whitesmoke;
     font-size: 19px;
     text-align: center;
 }
 
-.credits:hover{
+.credits:hover {
     background-color: #164edb;
-    padding : 5px;
+    padding: 5px;
     border-radius: 3px;
 }
-.container2{
+
+.container2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap:7px;
+    gap: 7px;
     padding-top: 20px;
 }
-@media screen and (max-width:987px) {
-  nav {
-    background-color: #7091e6;
-    position: fixed;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100vw;
-    height: 8vh;
-    z-index: 80;
-  }
-  .right {
-    display: none;
-  }
-  .left {
-    margin: auto;
-    transform: translateY(-3px);
-  }
-  .newGame{
-    height: 5vh;
-    width: 15vh;
-    font-size: 1.5vh;
-  }
-  footer {
-    background-color: #3D52A0;
-    height: 200px;
-    padding-top: 10px;
 
-}
-.gamearea{
+
+
+@media screen and (max-width:987px) {
+    nav {
+        background-color: #7091e6;
+        position: fixed;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100vw;
+        height: 8vh;
+        z-index: 80;
+    }
+
+    .right {
+        display: none;
+    }
+
+    .left {
+        margin: auto;
+        transform: translateY(-3px);
+    }
+
+    .newGame {
+        height: 5vh;
+        width: 15vh;
+        font-size: 1.5vh;
+    }
+
+    footer {
+        background-color: #3D52A0;
+        height: 200px;
+        padding-top: 10px;
+
+    }
+
+    .gamearea {
         font-size: 2vh;
         font-weight: bold;
     }
 }
-@media(max-width:450px){
-    .keyboard{
-        width:100%;
+
+@media(max-width:450px) {
+    .keyboard {
+        width: 100%;
     }
-    
-    
+
+
 }
