@@ -57,7 +57,7 @@ body {
 }
 
 h2 {
-    background-color: #7091e6;
+    background-color: #1e2e54;
     font-family: "Sixtyfour", sans-serif;
     height: 8vw;
     font-size: 4vw;
@@ -78,7 +78,7 @@ h2 {
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    background-color: #7091e6;
+    background-color: #1e2e54;
     flex-direction: column;
 }
 
@@ -111,7 +111,7 @@ h2 {
     min-width: 30px;
     min-height: 30px;
 
-    background-color: #7091e6;
+    background-color: #1e2e54;
     border: 3px ridge whitesmoke;
     border-radius: 5px;
 
@@ -191,12 +191,16 @@ h2 {
 .newGame {
     height: 4vw;
     width: 15vw;
-    background-color: #3D52A0;
+    background-color: #1e2e54;
     border: 5px ridge whitesmoke;
     color: aliceblue;
     font-size: 1.5vw;
     font-family: "Sixtyfour", sans-serif;
     border-radius: 1vw;
+}
+
+.newGame:hover {
+    background-color: #5870c5;
 }
 
 footer {
