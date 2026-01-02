@@ -124,6 +124,10 @@ const newDiv2 = document.createElement('div');
 newDiv2.className = "winner";
 newDiv2.textContent='You are almost there';
 
+const newDiv3 = document.createElement('div');
+newDiv3.className = "winner";
+newDiv3.textContent=`Hang in There! Word was ${word}`;
+
 let i=0;
 let keyletter='enter';
 let keyword='';    
@@ -196,9 +200,14 @@ for(let x=0; x<28; x++){
 
                     i=50;
                 }
+                else if(count!=5 && i>=30){
+                    main.appendChild(newDiv3);
+                    newDiv2.remove();
+                }
                 else if(count==4){
                     main.appendChild(newDiv2);
                 }
+                
             }
 
         });
