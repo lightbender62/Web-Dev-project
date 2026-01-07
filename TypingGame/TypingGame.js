@@ -16,8 +16,8 @@ async function renderNew() {
   try {
     const response = await fetch(url);
     const words = await response.json();
-    for (let i = 0; i < 3; i++) {
-      const sentsWord = words.slice(i * 10, (i + 1) * 10);
+    for (let i = 0; i < 2; i++) {
+      const sentsWord = words.slice(i * 11, (i + 1) * 11);
       if (sentsWord.length === 0) {
         break;
       }
