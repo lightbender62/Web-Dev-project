@@ -169,5 +169,35 @@ footer {
 }
 
 @media screen and (max-width:987px){
-  
+  nav {
+  background-color: #7091e6;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;   
+  height: 8vh;
+  z-index: 80;
+}
+ .right{
+  display: none;
+ }
+ .left{
+  margin: auto;
+  transform: translateY(-5px);
+ }
+  main{
+    height: 150vh;
+  }
+ .grid-container{
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding-top: 0px;
+  font-size: 35px;
+ } 
+ .box{
+  height: 20vh;
+  width: 50vw;
+ }
 }
