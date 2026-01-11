@@ -158,3 +158,16 @@ footer {
 #v1 {
   object-position: 86% 30%;
 }
+#v2{
+  object-position: 48% 30%;
+}
+#v3{
+  object-position: 45% 30%;
+}
+#v4{
+  object-position: 90% 50%;
+}
+
+@media screen and (max-width:987px){
+  
+}
