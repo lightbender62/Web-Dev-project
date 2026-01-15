@@ -10,6 +10,10 @@ let food = {
 };
 let score = 0;
 
+// Remaining :Add Logic for snake Body increase on food eaten
+// Remaining :Add Scoreboard and display Stuff
+// Remaining :Linking to Home and Display on That
+
 function main(ctime) {
   window.requestAnimationFrame(main);
   if ((ctime - lastPaintTime) / 1000 < 1 / speed) {
