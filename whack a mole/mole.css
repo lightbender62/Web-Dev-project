@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+
+}
+
+nav {
+    background-color: #7091e6;
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 8vh;
+    z-index: 15;
+}
+
+.list {
+    display: flex;
+    gap: 6vw;
+    list-style: none;
+    font-size: 25px;
+    color: whitesmoke;
+
+    font-family: sans-serif;
+}
+
+li {
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.list a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+a {
+    text-decoration: none;
+    color: #3d52a0;
+}
+
+li:hover {
+    background-color: #164edb;
+
+    cursor: pointer;
+    transition-duration: 0.02s;
+}
+
+.list a:hover {
+    text-decoration: none;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background: url("../assests/wam-bg.png");
+    background-size: cover;
+    overflow-x: hidden;
+
+}
+
+.score {
+    font-family: "Bebas Neue", sans-serif;
+
+    font-size: 5vh;
+}
+
+h1 {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 9vh;
+    margin-bottom: 2vh;
+}
+
+.board {
+    width: 540px;
+    height: 540px;
+
+
+    margin: 8vh auto;
+    display: flex;
+
+    flex-wrap: wrap;
+
+    background: url("../assests/soil.png");
+    background-size: cover;
+    border: 3px solid white;
+    border-radius: 25px;
+}
+
+footer {
+    background-color: #3d52a0;
+    padding-bottom: 20px;
+    width: 100vw;
+    font-size: 2vw;
+    position: static;
+}
+
+.credits {
+    color: whitesmoke;
+    font-size: 25px;
+    font-family: sans-serif;
+}
+
+.credits:hover {
+    background-color: #164edb;
+    padding: 5px;
+    border-radius: 3px;
+    font-size: 2vw;
+}
