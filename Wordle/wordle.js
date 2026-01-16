@@ -110,7 +110,7 @@ switch(value){
     case "95": word="AXIOM"; break;
     case "96": word="BERYL"; break;
     case "97": word="COVET"; break;
-    case "98": word="EHTOS"; break;
+    case "98": word="ETHOS"; break;
     case "99": word="FERAL"; break;
     case "100": word="GNASH"; break; 
     default: word="MAGIC";
