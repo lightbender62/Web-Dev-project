@@ -36,54 +36,67 @@ function isCollide(sArr) {
 }
 
 function gameEngine() {
-  // Update Food and Snake
-
   if (isCollide(snakeArr)) {
     inputDir = { x: 0, y: 0 };
-    alert("Game is Over");
-    snakeArr = [{ x: 13, y: 15 }];
+    alert(`Game Over. YOUR SCORE: ${score} Press any OK to play again!`);
+    snakeArr = [{ x: 10, y: 15 }];
+    score = 0;
+    speed = 5;
   }
 
-  if (snakeArr[0].x === food.x && snakeArr[0].y === food.y) {
+  let newHead = {
+    x: snakeArr[0].x + inputDir.x,
+    y: snakeArr[0].y + inputDir.y,
+  };
+
+  /* 
+  Check if we eat food or not using newhead 
+  For  the Growing of Snake part first i was trying to get the whole snake move but that was not working so 
+  Now just add the new element before the array for eaten is true else add and pop the tail  
+  */
+  if (newHead.x === food.x && newHead.y === food.y) {
+    score += 1;
+    document.querySelector(".scoreBox").textContent = `YOUR SCORE:${score}`;
+    if (score % 5 === 0) {
+      speed += 1;
+    }
+
+    let a = 2;
+    let b = 16;
     food = {
-      x: Math.floor(Math.random() * 18) + 1,
-      y: Math.floor(Math.random() * 18) + 1,
+      x: Math.round(a + (b - a) * Math.random()),
+      y: Math.round(a + (b - a) * Math.random()),
     };
-    snakeArr.unshift({
-      x: snakeArr[0].x + inputDir.x,
-      y: snakeArr[0].y + inputDir.y,
-    });
+
+    snakeArr.unshift(newHead);
+  } else {
+    snakeArr.unshift(newHead);
+    snakeArr.pop();
   }
+  /* RENDERING STUFF TO THE DOM */
 
-  for (let i = snakeArr.length - 1; i > 0; i--) {
-    snakeArr[i] = { ...snakeArr[i - 1] };
-  }
-
-  snakeArr[0].x += inputDir.x;
-  snakeArr[0].y += inputDir.y;
-
-  // Display Food and Snake
   board.innerHTML = "";
   snakeArr.forEach((ele, idx) => {
     let snakeElement = document.createElement("div");
     snakeElement.style.gridRowStart = ele.x;
     snakeElement.style.gridColumnStart = ele.y;
-    snakeElement.style.borderRadius = `4px`;
-    snakeElement.classList.add("snake");
     if (idx === 0) {
       snakeElement.classList.add("head");
+    } else {
+      snakeElement.classList.add("snakeBody");
     }
     board.appendChild(snakeElement);
   });
+
   let foodElement = document.createElement("div");
   foodElement.style.gridRowStart = food.x;
   foodElement.style.gridColumnStart = food.y;
-  foodElement.style.borderRadius = `4px`;
   foodElement.classList.add("food");
   board.appendChild(foodElement);
 }
 
-// Main Logic
+/* EVENT LISTENERS AND KIND OF SETINTERVAL */
+
 window.requestAnimationFrame(main);
 window.addEventListener("keydown", (event) => {
   switch (event.key) {

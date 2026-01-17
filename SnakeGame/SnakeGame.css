@@ -88,12 +88,29 @@ footer {
   grid-template-rows: repeat(18, 1fr);
   grid-template-columns: repeat(18, 1fr);
 }
+.scoreBox {
+  color: yellow;
+  font-size: 3rem;
+  font-family: sans-serif;
+  font-weight: bold;
+  margin-left: 9.20rem;
+}
+.snakeHeader {
+  color: whitesmoke;
+  font-size: 2.5rem;
+  font-family: sans-serif;
+  font-weight: bold;
+  margin-left: 2rem;
+}
 .head {
   background-color: green;
+  border-radius: 8px;
 }
-.snakeBody{
-    background-color: purple;
+.snakeBody {
+  background-color: purple;
+  border-radius: 8px;
 }
 .food {
   background-color: red;
+  border-radius: 8px;
 }
