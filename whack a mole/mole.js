@@ -2,10 +2,23 @@ let currMoleTile;
 let currPiranhaTile;
 let score=0;
 let gameOver = false;
+let tile=document.querySelectorAll('.tile');
 
-window.onload = function(){
-    setGame();
-}
+let btn=document.querySelector('.start');
+let wrapper=document.querySelector('.wrapper');
+
+
+btn.addEventListener('click', ()=>{
+    if(btn.textContent==='Start Game'){
+             setGame();
+    btn.style.display='none';
+    wrapper.style.display='block';
+    }
+    else{
+        location.reload();
+    }
+});
+
 
 function selectTile(){
 
@@ -20,19 +33,18 @@ function selectTile(){
     else if(this==currPiranhaTile){
         document.getElementById("score").innerText = "GAME OVER: " + score.toString();
         gameOver = true;
+        btn.style.display='inline';
+        btn.textContent='New game';
     }
 }
 
 function setGame(){
     //set up the grid for the game board
-    for(let i=0; i<9; i++){
-        let tile = document.createElement("div");
-        tile.id=i.toString();
-        document.getElementById("board").appendChild(tile);
-        tile.addEventListener('click', selectTile);
+    for(let i=0; i<9; i++){        
+        tile[i].addEventListener('click', selectTile);
     }
-    setInterval(setMole, 1200);
-    setInterval(setPiranha, 1200);
+    setInterval(setMole, 1500);
+    setInterval(setPiranha, 1500);
 }
 
 function getRandomTile() {

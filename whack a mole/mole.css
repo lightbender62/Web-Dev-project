@@ -6,6 +6,15 @@
     box-sizing: border-box;
 }
 
+html,
+body {
+  overflow-x: hidden;
+  display:flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
 nav {
     background-color: #7091e6;
     position: sticky;
@@ -19,11 +28,10 @@ nav {
 
 .list {
     display: flex;
-    gap: 6vw;
+    gap: 3.8vw;
     list-style: none;
     font-size: 25px;
     color: whitesmoke;
-
     font-family: sans-serif;
 }
 
@@ -40,11 +48,11 @@ li {
 a {
     text-decoration: none;
     color: #3d52a0;
+    font-size: 1.5vw;
 }
 
 li:hover {
     background-color: #164edb;
-
     cursor: pointer;
     transition-duration: 0.02s;
 }
@@ -59,13 +67,30 @@ body {
     background: url("../assests/mario-bg.jpg");
     background-size: cover;
     overflow-x: hidden;
+    background-position: right;
 
 }
 
-#score {
-    font-family: "Bebas Neue", sans-serif;
+.start{
+    background-color: #7091e6;
+    border-radius: 5px;
+    border:2px ridge rgb(23, 23, 60);
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
 
+#score {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 500;
     font-size: 5vh;
+}
+
+.wrapper{
+    display: none;
 }
 
 h1 {
@@ -79,13 +104,11 @@ h1 {
 #board {
     width: 540px;
     height: 540px;
-
-
     margin: 8vh auto;
-    display: flex;
-
-    flex-wrap: wrap;
-
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    padding-bottom: 10vh;
     background: url("../assests/soil.png");
     background-size: cover;
     border: 3px solid white;
@@ -106,15 +129,18 @@ h1 {
 
 footer {
     background-color: #3d52a0;
-    padding-bottom: 20px;
+    padding-bottom: 5px;
     width: 100vw;
     font-size: 2vw;
-    position: static;
+    height: 20vh;
+}
+main {
+    flex:1;
 }
 
 .credits {
     color: whitesmoke;
-    font-size: 25px;
+    font-size: 1.5vw;
     font-family: sans-serif;
 }
 
@@ -123,4 +149,116 @@ footer {
     padding: 5px;
     border-radius: 3px;
     font-size: 2vw;
+}
+
+.container2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+  padding-top: 20px;
+}
+
+h1{
+    font-size: 4.5vw;
+}
+
+@media screen and (max-width:987px) {
+    nav {
+        background-color: #7091e6;
+        position: fixed;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100vw;
+        height: 8vh;
+        z-index: 80;
+    }
+
+    .right {
+        display: none;
+    }
+
+    .left {
+        margin: auto;
+        transform: translateY(-3px);
+    }
+
+    footer {
+        background-color: #3D52A0;
+        height: 150px;
+        padding-top: 10px;
+
+    }
+
+    .credits{
+        font-size: 2vw;
+    }
+
+    #board{
+        width: 60vw;
+        height: 60vw;
+    }
+
+    #board div {
+        width: 19.5vw;
+        height: 19.5vw;
+        background-image: url("../assests/pipe.png");
+        background-size: cover;
+    }
+
+    #board div img {
+        width:11vw;
+        height:11vw;
+    }
+
+    h1{
+        font-size: 6.5vw;
+    }
+}
+
+@media screen and (max-width:700px){
+    h1{
+        font-size: 9vw;
+    }
+    .credits{
+        font-size: 2.5vw;
+    }
+}
+@media screen and (max-width:500px){
+    #board{
+        width: 80vw;
+        height: 80vw;
+    }
+
+    #board div {
+        width:26vw;
+        height:26vw;
+        background-image: url("../assests/pipe.png");
+        background-size: cover;   
+    }
+
+    #score{
+        font-size:7vw ;
+    }
+
+
+
+    #board div img {
+         width:15vw;
+         height:15vw;
+    }
+
+    h1{
+        font-size: 11vw;
+    }
+
+    .credits{
+        font-size: 3.5vw;
+    }
+
+    footer{
+        height: 120px;
+    }
 }
