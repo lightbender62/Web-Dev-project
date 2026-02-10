@@ -12,29 +12,11 @@ nav {
   height: 8vh;
   z-index: 15;
 }
-.credits {
-  color: whitesmoke;
-  font-size: 19px;
-  font-family: sans-serif;
-}
-.credits:hover {
-  background-color: #164edb;
-  padding: 5px;
-  border-radius: 3px;
-}
-.container2 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 7px;
-  padding-top: 20px;
-}
 .list {
   display: flex;
   gap: 6vw;
   list-style: none;
-  font-size: 25px;
+  font-size: 20px;
   color: whitesmoke;
 
   font-family: sans-serif;
@@ -89,18 +71,21 @@ footer {
   grid-template-columns: repeat(18, 1fr);
 }
 .scoreBox {
+  display: flex;
+  justify-content: center;
   color: yellow;
   font-size: 3rem;
   font-family: sans-serif;
   font-weight: bold;
-  margin-left: 9.20rem;
+  margin: auto;
 }
 .snakeHeader {
   color: whitesmoke;
   font-size: 2.5rem;
   font-family: sans-serif;
   font-weight: bold;
-  margin-left: 2rem;
+  display: flex;
+  justify-content: center;
 }
 .head {
   background-color: green;

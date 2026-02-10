@@ -10,13 +10,13 @@ nav {
   align-items: center;
   width: 100vw;
   height: 8vh;
-  z-index: 80;
+  z-index: 15;
 }
 .list {
   display: flex;
   gap: 6vw;
   list-style: none;
-  font-size: 25px;
+  font-size: 20px;
   color: whitesmoke;
 
   font-family: sans-serif;
@@ -28,6 +28,10 @@ li {
 .list a {
   text-decoration: none;
   color: whitesmoke;
+}
+a {
+  text-decoration: none;
+  color: #3d52a0;
 }
 li:hover {
   background-color: #164edb;

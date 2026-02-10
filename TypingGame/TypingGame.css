@@ -17,7 +17,7 @@ nav {
   display: flex;
   gap: 6vw;
   list-style: none;
-  font-size: 25px;
+  font-size: 20px;
   color: whitesmoke;
 
   font-family: sans-serif;
@@ -29,6 +29,10 @@ li {
 .list a {
   text-decoration: none;
   color: whitesmoke;
+}
+a {
+  text-decoration: none;
+  color: #3d52a0;
 }
 li:hover {
   background-color: #164edb;
