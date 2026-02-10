@@ -114,3 +114,44 @@ window.addEventListener("keydown", (event) => {
       break;
   }
 });
+
+let startX = 0;
+let startY = 0;
+let endX = 0;
+let endY = 0;
+
+const swipeThreshold = 30;
+window.addEventListener("touchstart" ,  (e) => {
+  startX = e.changedTouches[0].clientX;
+  startY = e.changedTouches[0].clientY;
+});
+
+window.addEventListener("touchend" , (e) => {
+  endX = e.changedTouches[0].clientX;
+  endY = e.changedTouches[0].clientY;
+
+  handleswipe();
+});
+
+function handleswipe(){
+  let X = endX - startX;
+  let Y = endY - startY;
+
+  if(Math.abs(X) > Math.abs(Y) && Math.abs(X) > swipeThreshold){
+    if(X > 0){
+      inputDir = {x : 0 , y: 1};
+    }
+    else{
+      inputDir = {x : 0 , y : -1};
+    }
+  }
+  else if (Math.abs(Y) > swipeThreshold){
+    if(Y > 0){
+      inputDir = {x : 1 , y : 0};
+    }
+    else{
+      inputDir = {x : -1 , y : 0};
+    }
+  }
+}
+
