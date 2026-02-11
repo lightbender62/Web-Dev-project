@@ -75,7 +75,9 @@ footer {
 
 .body {
   touch-action: none;
-  background: linear-gradient(blue, yellow);
+  background: url("../assests/snake-background.jpeg");
+  background-size: cover;
+  background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
