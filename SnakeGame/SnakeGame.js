@@ -82,14 +82,14 @@ function gameEngine() {
     snakeElement.style.gridColumnStart = ele.y;
     if (idx === 0) {
       snakeElement.classList.add("head");
-
-      if (inputDir.x === -1) snakeElement.style.transform = "rotate(0deg)";
-      if (inputDir.x === 1) snakeElement.style.transform = "rotate(180deg)";
-      if (inputDir.y === 1) snakeElement.style.transform = "rotate(90deg)";
-      if (inputDir.y === -1) snakeElement.style.transform = "rotate(-90deg)";
     } else {
       snakeElement.classList.add("snakeBody");
     }
+
+    if (inputDir.x === -1) snakeElement.style.transform = "rotate(0deg)";
+    if (inputDir.x === 1) snakeElement.style.transform = "rotate(180deg)";
+    if (inputDir.y === 1) snakeElement.style.transform = "rotate(90deg)";
+    if (inputDir.y === -1) snakeElement.style.transform = "rotate(-90deg)";
 
     board.appendChild(snakeElement);
   });
