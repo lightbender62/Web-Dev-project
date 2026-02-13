@@ -11,7 +11,7 @@ body {
 
 
 nav {
-  background-color: #7091e6;
+  background-color: #0A0E27 ;
   position: fixed;
   display: flex;
   justify-content: space-between;
@@ -19,6 +19,9 @@ nav {
   width: 100vw;
   height: 8vh;
   z-index: 15;
+}
+.invert{
+  filter : invert();
 }
 .list {
   display: flex;
@@ -39,7 +42,6 @@ li {
 }
 a {
   text-decoration: none;
-  color: #3d52a0;
 }
 li:hover {
   background-color: #164edb;
@@ -210,7 +212,7 @@ h2 {
 }
 
 footer {
-    background-color: #3D52A0;
+    background-color: #0A0E27;
     height: 150px;
     padding-top: 10px;
 

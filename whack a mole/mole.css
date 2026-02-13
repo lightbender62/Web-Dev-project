@@ -16,7 +16,7 @@ body {
 }
 
 nav {
-  background-color: #7091e6;
+  background-color: #0A0E27;
   position: fixed;
   display: flex;
   justify-content: space-between;
@@ -24,6 +24,9 @@ nav {
   width: 100vw;
   height: 8vh;
   z-index: 15;
+}
+.invert{
+  filter : invert();
 }
 .list {
   display: flex;
@@ -44,7 +47,6 @@ li {
 }
 a {
   text-decoration: none;
-  color: #3d52a0;
 }
 li:hover {
   background-color: #164edb;
@@ -73,7 +75,8 @@ body {
 }
 
 .start{
-    background-color: #7091e6;
+    color :#7091e6;
+    background-color: #0A0E27;
     border-radius: 5px;
     border:2px ridge rgb(23, 23, 60);
     width: 150px;
@@ -129,11 +132,11 @@ h1 {
 }
 
 footer {
-    background-color: #3d52a0;
+    background-color: #0A0E27;
     padding-bottom: 5px;
     width: 100vw;
     font-size: 2vw;
-    height: 20vh;
+    height: 22vh;
 }
 main {
     flex:1;

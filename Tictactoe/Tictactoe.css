@@ -9,14 +9,17 @@ body {
 }
 
 nav {
-  background-color: #7091e6;
+  background-color: #0A0E27 ;
   position: fixed;
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100vw;
   height: 8vh;
-  z-index: 15;
+  z-index: 80;
+}
+.invert{
+  filter : invert();
 }
 .list {
   display: flex;
@@ -37,7 +40,6 @@ li {
 }
 a {
   text-decoration: none;
-  color: #3d52a0;
 }
 li:hover {
   background-color: #164edb;
@@ -150,7 +152,7 @@ body {
 }
 
 footer {
-  background-color: #3d52a0;
+  background-color: #0A0E27;
   padding-bottom: 20px;
   width: 100vw;
   font-size: 2vw;
