@@ -10,7 +10,7 @@ nav {
   align-items: center;
   width: 100vw;
   height: 8vh;
-  z-index: 15;
+  z-index: 80;
 }
 .list {
   display: flex;
@@ -186,5 +186,4 @@ footer {
     height: 200px;
     padding-top: 10px;
 }
-
 }

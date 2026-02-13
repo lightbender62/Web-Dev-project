@@ -3,7 +3,7 @@
   padding: 0;
 }
 nav {
-  background-color: #7091e6;
+  background-color: #0A0E27 ;
   position: fixed;
   display: flex;
   justify-content: space-between;
@@ -11,6 +11,9 @@ nav {
   width: 100vw;
   height: 8vh;
   z-index: 15;
+}
+.invert{
+  filter : invert();
 }
 .list {
   display: flex;
@@ -31,7 +34,6 @@ li {
 }
 a {
   text-decoration: none;
-  color: #3d52a0;
 }
 li:hover {
   background-color: #164edb;
@@ -49,11 +51,30 @@ li:hover {
   padding-right: 30px;
 }
 main {
-  height: 155vh;
-  background-color: #ede8f5;
+  height: 140vh;
+  background-color: #111636;
+}
+.start{
+  font-weight: 700;
+  font-size: xx-large;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right,#c084fc, #60a5fa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+.start2{
+  font-size: 25px;
+  padding : 30px;
+  color: whitesmoke;
+  width: 70vw;
+  margin: auto;
+  text-align: center;
 }
 footer {
-  background-color: #3d52a0;
+  background-color: #0A0E27;
   padding-bottom: 20px;
 }
 .credits {
@@ -61,28 +82,22 @@ footer {
   font-size: 19px;
   font-family: sans-serif;
 }
-
-.credits:hover {
-  background-color: #164edb;
-  padding: 5px;
-  border-radius: 3px;
-}
 .container2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 7px;
-  padding-top: 20px;
+  padding-top: 15px;
 }
 
 .grid-container {
   padding-top: 30px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   row-gap: 100px;
   margin: auto;
-  width: 60vw;
+  width: 80vw;
   grid-template-rows: 180px;
   font-size: 40px;
   font-family: sans-serif;
@@ -91,8 +106,8 @@ footer {
 
 .box {
   padding: 40px;
-  height: 175px;
-  width: 200px;
+  height: 155px;
+  width: 250px;
   padding: 30px;
   display: flex;
   flex-direction: column;
@@ -124,59 +139,76 @@ footer {
 }
 
 .label {
+  color:whitesmoke;
   text-shadow: 0 1.5px 2px rgba(0, 0, 0, 0.7);
 }
 
 #box1 {
-  background-color: lightblue;
-  border: 4px solid blue;
-  color: #3d52a0;
-  box-shadow: 4px 4px 4px lightblue;
+  background: linear-gradient(to right, #0EA5E9, #06B6D4);
+  border: 1px solid rgb(255, 255, 255);
+  color: whitesmoke;
+  border-radius:12px;
 }
 #box1 :nth-child(1) {
   text-decoration: none;
-  color: #3d52a0;
 }
 #box2 {
-  background-color: lightgreen;
-  border: 4px solid teal;
-  color: #3d52a0;
-  box-shadow: 4px 4px 4px lightgreen;
+  background: linear-gradient(to right, #22C55E, #10B981);
+  border: 1px solid rgb(255, 255, 255);
+  color: whitesmoke;
+  border-radius:12px;
 }
 #box3 {
-  background-color: #ffbf00;
-  border: 4px solid red;
-  color: #3d52a0;
-  box-shadow: 4px 4px 4px #ffbf00;
+  background: linear-gradient(to right, #F97316, #FBBF24);
+  border: 1px solid rgb(255, 255, 255);
+  color: whitesmoke;
+  border-radius:12px;
 }
 #box4 {
-  box-shadow: 4px 4px 4px pink;
-  background-color: pink;
-  border: 4px solid maroon;
-  color: #3d52a0;
+  background: linear-gradient(to right, #EC4899, #FB7185);
+  border: 1px solid rgb(255, 255, 255);
+  color: whitesmoke;
+  border-radius:12px;
 }
 #box5 {
-  box-shadow: 4px 4px 4px rgb(118, 101, 196);
-  background-color: rgb(118, 101, 196);
-  border: 4px solid rgb(69, 55, 134);
-  color: #3d52a0;
+  background: linear-gradient(to right, #A855F7, #6366F1);
+  border: 1px solid rgb(255, 255, 255);
+ color: whitesmoke;
+ border-radius:12px;
 }
 #box6 {
-  box-shadow: 4px 4px 4px rgb(229, 116, 116);
-  background-color: rgb(229, 116, 116);
-  border: 4px solid rgb(177, 8, 8);
+  background: linear-gradient(to right, #8B5CF6, #A855F7);
+  border: 1px solid rgb(255, 255, 255);
+  color: whitesmoke;
+  border-radius:12px; 
 }
 #v1 {
-  object-position: 86% 30%;
+  object-position:center;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius:12px;
 }
 #v2{
   object-position: 48% 30%;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius:12px;
 }
 #v3{
   object-position: 45% 30%;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius:12px;
 }
 #v4{
   object-position: 90% 50%;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius:12px;
+}
+#v5{
+  border: 1px solid rgb(255, 255, 255);
+  border-radius:12px;
+}
+#v6{
+  border: 1px solid rgb(255, 255, 255);
+  border-radius:12px;
 }
 
 @media screen and (max-width:987px){
